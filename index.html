@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>aSSMamba-VC demo samples</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #fafafa;
+      color: #222;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    .nav {
+      text-align: center;
+      margin: 25px 0;
+      font-size: 15px;
+    }
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0066cc;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== BORDERLESS TABLE STYLE ===== */
+    table {
+      border-collapse: collapse;
+      width: auto;
+      margin: 20px auto;
+      font-size: 14px;
+    }
+    th, td {
+      border: none;
+      padding: 6px 12px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    th {
+      background-color: #f0f0f0;
+      border-bottom: 2px solid #ccc;
+    }
+    tr {
+      border-bottom: 1px solid #eee;
+    }
+
+    audio {
+      width: 140px;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>aSSMamba-VC</h1>
+<div style="text-align:center; font-size:15px;">Anonymous Author(s)</div>
+
+<p style="text-align:center;">
+Submitted to <b>IJCNN 2026</b>
+</p>
+
+<div class="nav">
+  <a href="#m2m">Male → Male</a>
+  <a href="#m2f">Male → Female</a>
+  <a href="#f2m">Female → Male</a>
+  <a href="#f2f">Female → Female</a>
+</div>
+
+<!-- ================== MALE TO MALE ================== -->
+<div class="section" id="m2m">
+<h3>Male → Male Conversion</h3>
+<table>
+<tr><th>Method</th><th>Sample 1</th><th>Sample 2</th><th>Sample 3</th></tr>
+
+<tr><td>Source</td>
+<td><audio controls src="samples/m2m_source_1.wav"></audio></td>
+<td><audio controls src="samples/m2m_source_2.wav"></audio></td>
+<td><audio controls src="samples/m2m_source_3.wav"></audio></td></tr>
+
+<tr><td>Reference</td>
+<td><audio controls src="samples/m2m_ref_1.wav"></audio></td>
+<td><audio controls src="samples/m2m_ref_2.wav"></audio></td>
+<td><audio controls src="samples/m2m_ref_3.wav"></audio></td></tr>
+
+<tr><td>Diff-VC [2]</td>
+<td><audio controls src="samples/m2m_diffvc_1.wav"></audio></td>
+<td><audio controls src="samples/m2m_diffvc_2.wav"></audio></td>
+<td><audio controls src="samples/m2m_diffvc_3.wav"></audio></td></tr>
+
+<tr><td><b>Diff-VC + Ours</b></td>
+<td><audio controls src="samples/m2m_diffvc_ours_1.wav"></audio></td>
+<td><audio controls src="samples/m2m_diffvc_ours_2.wav"></audio></td>
+<td><audio controls src="samples/m2m_diffvc_ours_3.wav"></audio></td></tr>
+
+<tr><td>DiffHier-VC [4]</td>
+<td><audio controls src="samples/m2m_diffhier_1.wav"></audio></td>
+<td><audio controls src="samples/m2m_diffhier_2.wav"></audio></td>
+<td><audio controls src="samples/m2m_diffhier_3.wav"></audio></td></tr>
+
+<tr><td><b>aSSMamba-VC (Ours)</b></td>
+<td><audio controls src="samples/m2m_assmamba_1.wav"></audio></td>
+<td><audio controls src="samples/m2m_assmamba_2.wav"></audio></td>
+<td><audio controls src="samples/m2m_assmamba_3.wav"></audio></td></tr>
+</table>
+</div>
+
+<!-- ================== MALE TO FEMALE ================== -->
+<div class="section" id="m2f">
+<h3>Male → Female Conversion</h3>
+<table>
+<tr><th>Method</th><th>Sample 1</th><th>Sample 2</th><th>Sample 3</th></tr>
+
+<tr><td>Source</td>
+<td><audio controls src="samples/m2f_source_1.wav"></audio></td>
+<td><audio controls src="samples/m2f_source_2.wav"></audio></td>
+<td><audio controls src="samples/m2f_source_3.wav"></audio></td></tr>
+
+<tr><td>Reference</td>
+<td><audio controls src="samples/m2f_ref_1.wav"></audio></td>
+<td><audio controls src="samples/m2f_ref_2.wav"></audio></td>
+<td><audio controls src="samples/m2f_ref_3.wav"></audio></td></tr>
+
+<tr><td>Diff-VC [2]</td>
+<td><audio controls src="samples/m2f_diffvc_1.wav"></audio></td>
+<td><audio controls src="samples/m2f_diffvc_2.wav"></audio></td>
+<td><audio controls src="samples/m2f_diffvc_3.wav"></audio></td></tr>
+
+<tr><td><b>Diff-VC + Ours</b></td>
+<td><audio controls src="samples/m2f_diffvc_ours_1.wav"></audio></td>
+<td><audio controls src="samples/m2f_diffvc_ours_2.wav"></audio></td>
+<td><audio controls src="samples/m2f_diffvc_ours_3.wav"></audio></td></tr>
+
+<tr><td>DiffHier-VC [4]</td>
+<td><audio controls src="samples/m2f_diffhier_1.wav"></audio></td>
+<td><audio controls src="samples/m2f_diffhier_2.wav"></audio></td>
+<td><audio controls src="samples/m2f_diffhier_3.wav"></audio></td></tr>
+
+<tr><td><b>aSSMamba-VC (Ours)</b></td>
+<td><audio controls src="samples/m2f_assmamba_1.wav"></audio></td>
+<td><audio controls src="samples/m2f_assmamba_2.wav"></audio></td>
+<td><audio controls src="samples/m2f_assmamba_3.wav"></audio></td></tr>
+</table>
+</div>
+
+<!-- ================== FEMALE TO MALE ================== -->
+<div class="section" id="f2m">
+<h3>Female → Male Conversion</h3>
+<table>
+<tr><th>Method</th><th>Sample 1</th><th>Sample 2</th><th>Sample 3</th></tr>
+
+<tr><td>Source</td>
+<td><audio controls src="samples/f2m_source_1.wav"></audio></td>
+<td><audio controls src="samples/f2m_source_2.wav"></audio></td>
+<td><audio controls src="samples/f2m_source_3.wav"></audio></td></tr>
+
+<tr><td>Reference</td>
+<td><audio controls src="samples/f2m_ref_1.wav"></audio></td>
+<td><audio controls src="samples/f2m_ref_2.wav"></audio></td>
+<td><audio controls src="samples/f2m_ref_3.wav"></audio></td></tr>
+
+<tr><td>Diff-VC [2]</td>
+<td><audio controls src="samples/f2m_diffvc_1.wav"></audio></td>
+<td><audio controls src="samples/f2m_diffvc_2.wav"></audio></td>
+<td><audio controls src="samples/f2m_diffvc_3.wav"></audio></td></tr>
+
+<tr><td><b>Diff-VC + Ours</b></td>
+<td><audio controls src="samples/f2m_diffvc_ours_1.wav"></audio></td>
+<td><audio controls src="samples/f2m_diffvc_ours_2.wav"></audio></td>
+<td><audio controls src="samples/f2m_diffvc_ours_3.wav"></audio></td></tr>
+
+<tr><td>DiffHier-VC [4]</td>
+<td><audio controls src="samples/f2m_diffhier_1.wav"></audio></td>
+<td><audio controls src="samples/f2m_diffhier_2.wav"></audio></td>
+<td><audio controls src="samples/f2m_diffhier_3.wav"></audio></td></tr>
+
+<tr><td><b>aSSMamba-VC (Ours)</b></td>
+<td><audio controls src="samples/f2m_assmamba_1.wav"></audio></td>
+<td><audio controls src="samples/f2m_assmamba_2.wav"></audio></td>
+<td><audio controls src="samples/f2m_assmamba_3.wav"></audio></td></tr>
+</table>
+</div>
+
+<!-- ================== FEMALE TO FEMALE ================== -->
+<div class="section" id="f2f">
+<h3>Female → Female Conversion</h3>
+<table>
+<tr><th>Method</th><th>Sample 1</th><th>Sample 2</th><th>Sample 3</th></tr>
+
+<tr><td>Source</td>
+<td><audio controls src="samples/f2f_source_1.wav"></audio></td>
+<td><audio controls src="samples/f2f_source_2.wav"></audio></td>
+<td><audio controls src="samples/f2f_source_3.wav"></audio></td></tr>
+
+<tr><td>Reference</td>
+<td><audio controls src="samples/f2f_ref_1.wav"></audio></td>
+<td><audio controls src="samples/f2f_ref_2.wav"></audio></td>
+<td><audio controls src="samples/f2f_ref_3.wav"></audio></td></tr>
+
+<tr><td>Diff-VC [2]</td>
+<td><audio controls src="samples/f2f_diffvc_1.wav"></audio></td>
+<td><audio controls src="samples/f2f_diffvc_2.wav"></audio></td>
+<td><audio controls src="samples/f2f_diffvc_3.wav"></audio></td></tr>
+
+<tr><td><b>Diff-VC + Ours</b></td>
+<td><audio controls src="samples/f2f_diffvc_ours_1.wav"></audio></td>
+<td><audio controls src="samples/f2f_diffvc_ours_2.wav"></audio></td>
+<td><audio controls src="samples/f2f_diffvc_ours_3.wav"></audio></td></tr>
+
+<tr><td>DiffHier-VC [4]</td>
+<td><audio controls src="samples/f2f_diffhier_1.wav"></audio></td>
+<td><audio controls src="samples/f2f_diffhier_2.wav"></audio></td>
+<td><audio controls src="samples/f2f_diffhier_3.wav"></audio></td></tr>
+
+<tr><td><b>aSSMamba-VC (Ours)</b></td>
+<td><audio controls src="samples/f2f_assmamba_1.wav"></audio></td>
+<td><audio controls src="samples/f2f_assmamba_2.wav"></audio></td>
+<td><audio controls src="samples/f2f_assmamba_3.wav"></audio></td></tr>
+</table>
+</div>
+
+<div class="footer">
+  © 2025. Demo samples provided by Anonymous Author(s).
+</div>
+
+</body>
+</html>
