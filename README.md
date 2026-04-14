@@ -2,11 +2,10 @@
 
 ## Learning Linear-Time Sequence Modeling with Selective State Spaces for Voice Conversion
 
-**Authors:**
-**Ravindrakumar M. Purohit***, **Kaustubh S. Wade***, **Hemant A. Patil**
-Speech Research Lab, Dhirubhai Ambani University (formerly DA-IICT), Gandhinagar, India
+**Authors:**  
+**Ravindrakumar M. Purohit***, **Kaustubh S. Wade***, **Hemant A. Patil**  
+Speech Research Lab, Dhirubhai Ambani University (formerly DA-IICT), Gandhinagar, India  
 📧 {202321002, 202418024, hemant.patil}@dau.ac.in
-
 > *Equal contribution
 
 ---
